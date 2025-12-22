@@ -1,0 +1,4 @@
+original_url,description,category,tags,mood,status,error_message
+https://www.instagram.com/p/ABC123/,"Cozy home studio setup with warm lighting and vintage equipment","Music/Studio","home studio,recording,vintage gear,warm lighting,music production","cozy, warm",success,
+https://www.instagram.com/p/DEF456/,"Minimalist fashion outfit featuring neutral tones and clean lines","Fashion","minimalist,neutral tones,fashion,clean aesthetic,style","minimal, clean",success,
+https://www.instagram.com/p/GHI789/,"Error accessing post",,,,"error","Post unavailable or deleted"
