@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pine Frost - Vertical Slice</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="top-bar" id="resourceBar"></header>
+
+    <aside class="left-alerts">
+      <h3>Alerts</h3>
+      <ul id="alerts"></ul>
+      <section class="objectives">
+        <h3>Objectives</h3>
+        <ul id="objectives"></ul>
+      </section>
+    </aside>
+
+    <main class="world-area">
+      <canvas id="world" width="1280" height="720"></canvas>
+      <div class="overlay-info" id="overlayLabel">Overlay: Normal</div>
+      <div class="selected-panel" id="selectedPanel">Select a villager, building, or resource node.</div>
+    </main>
+
+    <footer class="bottom-ui">
+      <section class="panel build-panel">
+        <h3>Build</h3>
+        <div class="btn-grid" id="buildButtons"></div>
+      </section>
+      <section class="panel jobs-panel">
+        <h3>Village Jobs</h3>
+        <div id="jobControls"></div>
+      </section>
+      <section class="panel controls-panel">
+        <h3>Survival Controls</h3>
+        <div class="btn-stack">
+          <button id="overlayHeat">Toggle Heat Overlay</button>
+          <button id="overlayResources">Toggle Resource Overlay</button>
+          <button id="overlayDanger">Toggle Danger Overlay</button>
+          <button id="pauseBtn">Pause / Resume</button>
+          <button id="saveBtn">Save</button>
+          <button id="loadBtn">Load</button>
+          <button id="newGameBtn">New Game</button>
+        </div>
+      </section>
+    </footer>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-card">
+        <h2 id="modalTitle"></h2>
+        <p id="modalBody"></p>
+        <button id="modalClose">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./game.js"></script>
+</body>
+</html>
